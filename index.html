@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ブルーオーシャン10 | せんせいの便利アプリ集</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: system-ui, "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
+    background: #F7F5F0;
+    color: #333;
+    min-height: 100vh;
+    padding: 24px 16px 48px;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 8px; }
+  h1 { font-size: 1.9rem; letter-spacing: .05em; }
+  h1 .blue { color: #1D7ED8; }
+  .subtitle { color: #777; margin: 8px 0 28px; font-size: .95rem; line-height: 1.7; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  a.card {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    padding: 18px;
+    text-decoration: none;
+    color: inherit;
+    border-left: 6px solid var(--accent);
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  a.card:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(0,0,0,.12); }
+  .emoji {
+    font-size: 2rem;
+    width: 56px; height: 56px;
+    display: flex; align-items: center; justify-content: center;
+    background: color-mix(in srgb, var(--accent) 12%, #fff);
+    border-radius: 14px;
+    flex-shrink: 0;
+  }
+  .card h2 { font-size: 1.08rem; margin-bottom: 4px; }
+  .card p { font-size: .85rem; color: #666; line-height: 1.6; }
+  .num {
+    font-size: .72rem; font-weight: bold; color: var(--accent);
+    letter-spacing: .1em;
+  }
+  footer { text-align: center; margin-top: 36px; color: #999; font-size: .8rem; line-height: 1.8; }
+  @media (max-width: 480px) {
+    h1 { font-size: 1.4rem; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🌊 <span class="blue">ブルーオーシャン</span>10</h1>
+    <p class="subtitle">「ありそうでない」学校のニッチな困りごとを解決する10アプリ。<br>すべてブラウザだけで動き、データは端末内に保存されます。</p>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="01_せきがえヒストリー.html" style="--accent:#E76F51">
+      <div class="emoji">🪑</div>
+      <div>
+        <div class="num">No.01</div>
+        <h2>せきがえヒストリー</h2>
+        <p>過去の席替え履歴をおぼえて「前も隣だった」を回避。固定席・ドキドキ発表モードつき。</p>
+      </div>
+    </a>
+    <a class="card" href="02_はつげんマップ.html" style="--accent:#2A9D8F">
+      <div class="emoji">🗣️</div>
+      <div>
+        <div class="num">No.02</div>
+        <h2>はつげんマップ</h2>
+        <p>発言をタップで記録して座席ヒートマップに。指名の偏りが見え、0回の子がすぐわかる。</p>
+      </div>
+    </a>
+    <a class="card" href="03_単元進度トラッカー.html" style="--accent:#457B9D">
+      <div class="emoji">📚</div>
+      <div>
+        <div class="num">No.03</div>
+        <h2>単元進度トラッカー</h2>
+        <p>教科ごとの残り時数を学期末から逆算。「あと◯コマ足りない」を早めに教えてくれる。</p>
+      </div>
+    </a>
+    <a class="card" href="04_走順くみわけメーカー.html" style="--accent:#E63946">
+      <div class="emoji">🏃</div>
+      <div>
+        <div class="num">No.04</div>
+        <h2>走順くみわけメーカー</h2>
+        <p>50m走のタイムを貼るだけで、接戦になる組分けとレーン表が完成。印刷・招集モードつき。</p>
+      </div>
+    </a>
+    <a class="card" href="05_プール入水チェッカー.html" style="--accent:#1D7ED8">
+      <div class="emoji">🏊</div>
+      <div>
+        <div class="num">No.05</div>
+        <h2>プール入水チェッカー</h2>
+        <p>水温＋気温で実施可否を即判定。毎日の記録がそのままプール日誌として印刷できる。</p>
+      </div>
+    </a>
+    <a class="card" href="06_ごしちごチェッカー.html" style="--accent:#8E44AD">
+      <div class="emoji">🖌️</div>
+      <div>
+        <div class="num">No.06</div>
+        <h2>ごしちごチェッカー</h2>
+        <p>俳句・短歌の音数を自動カウント。字余りもひと目でわかり、縦書き短冊で印刷できる。</p>
+      </div>
+    </a>
+    <a class="card" href="07_ルーブリックメーカー.html" style="--accent:#16A085">
+      <div class="emoji">📋</div>
+      <div>
+        <div class="num">No.07</div>
+        <h2>ルーブリックメーカー</h2>
+        <p>観点×A/B/Cの評価表をサクッと作成。テンプレ内蔵、A4横できれいに印刷。</p>
+      </div>
+    </a>
+    <a class="card" href="08_こんだんスケジューラー.html" style="--accent:#D4820A">
+      <div class="emoji">🗓️</div>
+      <div>
+        <div class="num">No.08</div>
+        <h2>こんだんスケジューラー</h2>
+        <p>個人懇談の時間割を希望条件つきで自動割付。全体表とお知らせ短冊を印刷できる。</p>
+      </div>
+    </a>
+    <a class="card" href="09_わすれものトラッカー.html" style="--accent:#C0392B">
+      <div class="emoji">🎒</div>
+      <div>
+        <div class="num">No.09</div>
+        <h2>わすれものトラッカー</h2>
+        <p>忘れ物を2タップで記録、個人×品目のヒートマップに。声かけリストを自動作成。</p>
+      </div>
+    </a>
+    <a class="card" href="10_じゅぎょうタイムライン.html" style="--accent:#F4A261">
+      <div class="emoji">⏱️</div>
+      <div>
+        <div class="num">No.10</div>
+        <h2>じゅぎょうタイムライン</h2>
+        <p>45分の授業の流れをブロックで設計し、本番はそのまま進行タイマーとしてテレビに表示。</p>
+      </div>
+    </a>
+  </div>
+
+  <footer>
+    データはこの端末のブラウザ内（localStorage）にのみ保存されます。<br>
+    ブルーオーシャン10 — せんせいの「ありそうでなかった」道具箱
+  </footer>
+</div>
+</body>
+</html>
